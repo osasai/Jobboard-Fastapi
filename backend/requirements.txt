@@ -17,3 +17,10 @@ passlib[bcrypt]
 # for testing
 pytest
 requests
+pytest-cov==2.11.1
+
+# for JWT tokens
+python-jose
+
+# for form data
+python-multipart

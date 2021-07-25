@@ -6,6 +6,7 @@ pwt_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 class Hasher():
     @staticmethod
     def verify_password(plain_password, hashed_password):
+        print("パスワードのハッシュ化 ", pwt_context.hash(plain_password))
         return pwt_context.verify(plain_password, hashed_password)
 
     @staticmethod

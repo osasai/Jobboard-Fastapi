@@ -16,4 +16,10 @@ class Settings:
     POSTGRES_DB : str = os.getenv("POSTGRES_DB","db_course")
     DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/{POSTGRES_DB}"
 
+    SECRET_KEY : str = os.getenv("SECRET_KEY")
+    ALGOLITHM = "HS256"
+    ACCESS_TOKEN_EXPIRE_MINUTE = 30
+
+    TEST_USER_EMAIL = "test@example.com"
+
 settings = Settings()
